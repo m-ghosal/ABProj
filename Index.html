@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Page</title>
+    <style>
+        /* Body styling */
+        body {
+            background-color: #f8d1e0; /* Light pink background */
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            font-weight: bold; /* Bold text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        /* Rectangular container styling */
+        .rectangle-container {
+            width: 600px; /* Adjusted width to fit the content */
+            min-height: 400px;
+            background-color: white;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Padding to ensure text and buttons have some space inside */
+            text-align: center;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 2.5rem;
+            color: black; /* Black text color */
+            margin-bottom: 30px;
+        }
+
+        /* Button container to align buttons side by side */
+        .button-container {
+            display: flex; /* Flexbox to make buttons align horizontally */
+            gap: 20px; /* Space between buttons */
+        }
+
+        /* Button styling */
+        button {
+            background-color: #f06e97; /* Lighter pink */
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            /* Hover effect for buttons */
+            button:hover {
+                background-color: #d2006f; /* Darker pink when hovering */
+            }
+    </style>
+    <!-- Link to Google Fonts for cursive font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="rectangle-container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='Memories.html'">Yes</button>
+            <button onclick="window.location.href='Sad.html'">No</button>
+        </div>
+    </div>
+</body>
+</html>
